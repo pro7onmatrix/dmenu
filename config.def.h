@@ -6,14 +6,14 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"FiraCode Nerd Font:size=12:style=Regular:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	/*                fg         bg       */
+	[SchemeNorm] = { "#d8dee9", "#2e3440" },
+	[SchemeSel]  = { "#e5e9f0", "#d08770" },
+	[SchemeOut]  = { "#000000", "#ebcb8b" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
